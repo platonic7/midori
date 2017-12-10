@@ -46,7 +46,7 @@ group :development, :test do
   gem 'selenium-webdriver'
 
   # gem 'factory_bot', require: false
-  gem 'factory_bot'
+  gem 'factory_bot_rails'
   gem 'faker', '~> 1.8', '>= 1.8.5'
 
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
