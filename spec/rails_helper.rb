@@ -5,8 +5,6 @@ require File.expand_path('../../config/environment', __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
-# 필요한지 확인
-# require 'factory_bot'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -57,13 +55,5 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-
-  # 필요한지 확인
-  config.include FactoryBot::Syntax::Methods
-
-  # 필요한지 확인
-  # config.before(:all) do
-  #   FactoryBot.reload # これがないとfactoryの変更が反映されません
-  # end
 end
 
